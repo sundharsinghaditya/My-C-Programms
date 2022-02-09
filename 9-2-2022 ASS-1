@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a,b,*p,*p1,sum=0,sub=0,increment=0,decrement=0;
+clrscr();
+printf("\n enter the a,b values");
+scanf("%d%d",&a,&b);
+p=&a;
+//*p=a;
+p1=&b;
+//*p1=b;
+printf("\n THE ADDRESS OF VARAIBLE A IS: %u \n \nTHE ADDRES OF VARIABLE B IS: %u \n\n THE VALUE OF POINTER VARIABLE A IS: %d \n \n THE VALUE OF POINTER VARAIBLE B IS: %d",p,p1,*p,*p1);
+sum=*p+*p1;
+printf("\n \n ADDITON OF THE POINTER VARAIBLES A and B IS :%d",sum);
+sub=*p-*p1;
+printf("\n \n SUBTRACTION OF THE POINTER VARAIBLES A and B IS :%d",sub);
+p++;
+printf("\n increment of pointer address :%u",p);
+p1--;
+printf("\n decrement of pointer address is :%u",p1);
+
+getch();
+return 0;
+}
